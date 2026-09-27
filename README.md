@@ -4,6 +4,8 @@ A full-stack web app for discovering, reviewing and sharing hiking trails.
 
 Built as a portfolio project with a deliberately small dependency footprint: the only runtime dependency is **Express**. The database is Node's built-in SQLite module, and the frontend is plain HTML, CSS and JavaScript with no build step.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/iaroslaviskendirov-alt/trailhead)
+
 ## Features
 
 - **Browse trails.** Search as you type, filter by difficulty and region, and sort by rating, length, elevation, newest or name.
@@ -45,6 +47,13 @@ Environment variables:
 
 - `PORT`: HTTP port (default `3000`).
 - `DB_FILE`: path to the SQLite file.
+- `TRUST_PROXY`: set to `1` when running behind a reverse proxy, so rate limiting sees the real client IP.
+
+## Deployment
+
+The repo includes a [`render.yaml`](render.yaml) blueprint. Click **Deploy to Render** above, or create a Blueprint in the Render dashboard from this repository.
+
+On Render's free plan the filesystem is not persistent, so the database is re-seeded with demo data after each redeploy or restart. This is fine for a demo. For persistent data, attach a disk and point `DB_FILE` at it.
 
 ## API
 
