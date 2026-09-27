@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trailhead — Find your next hike</title>
+  <meta name="description" content="Discover, review and share hiking trails." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M2 28 L12 10 L18 20 L22 14 L30 28 Z' fill='%232f5d46'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo" aria-label="Trailhead home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 28 L12 10 L18 20 L22 14 L30 28 Z" /></svg>
+        Trailhead
+      </a>
+      <nav class="nav">
+        <a href="#/" data-nav="explore">Explore</a>
+        <a href="#/submit" data-nav="submit" class="btn btn-small">Add a trail</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Trailhead · A full-stack portfolio project — Node.js, Express, SQLite &amp; vanilla JS.</p>
+      <p class="muted">All trails are fictional. Always check local conditions before heading out.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

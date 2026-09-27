@@ -1,0 +1,19 @@
+{
+  "name": "trailhead",
+  "version": "1.0.0",
+  "description": "Full-stack hiking trail explorer — Express REST API + SQLite + vanilla JS frontend",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"tests/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
