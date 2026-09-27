@@ -1,5 +1,7 @@
 # Trailhead 🥾
 
+![Trailhead cover](docs/cover.png)
+
 A full-stack web app for discovering, reviewing and sharing hiking trails.
 
 Built as a portfolio project with a deliberately small dependency footprint: the only runtime dependency is **Express**. The database is Node's built-in SQLite module, and the frontend is plain HTML, CSS and JavaScript with no build step.

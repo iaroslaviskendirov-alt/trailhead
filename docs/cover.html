@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1600px; height: 900px; overflow: hidden; }
+  body {
+    background: radial-gradient(1200px 700px at 85% 20%, #1f3a2c 0%, #121714 60%);
+    font-family: Inter, sans-serif; color: #e8ebe6; position: relative;
+  }
+  .topo { position: absolute; inset: 0; opacity: .10; }
+  .left { position: absolute; left: 96px; top: 0; bottom: 0; width: 560px; display: flex; flex-direction: column; justify-content: center; }
+  .logo { display: flex; align-items: center; gap: 14px; font-family: Fraunces, serif; font-weight: 700; font-size: 34px; margin-bottom: 44px; }
+  .logo svg { width: 44px; height: 44px; fill: #7fbf98; }
+  .eyebrow { color: #7fbf98; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: 16px; margin-bottom: 18px; }
+  h1 { font-family: Fraunces, serif; font-size: 84px; line-height: 1.02; letter-spacing: -.015em; margin-bottom: 26px; }
+  p { color: #a7b1ab; font-size: 22px; line-height: 1.5; margin-bottom: 40px; max-width: 480px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; max-width: 520px; }
+  .chip { border: 1px solid #2f3d35; background: #1a211d; border-radius: 999px; padding: 9px 18px; font-size: 17px; font-weight: 500; }
+  .frame { position: absolute; border-radius: 14px; overflow: hidden; background: #1a211d; border: 1px solid #2f3d35;
+           box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 8px 20px rgba(0,0,0,.35); }
+  .bar { height: 34px; background: #202824; display: flex; align-items: center; gap: 8px; padding: 0 14px; border-bottom: 1px solid #2f3d35; }
+  .bar i { width: 11px; height: 11px; border-radius: 50%; background: #3a463f; display: block; }
+  .bar span { margin-left: 14px; flex: 1; max-width: 340px; height: 20px; border-radius: 6px; background: #151b18; color: #7d877f; font-size: 12px; line-height: 20px; padding-left: 10px; }
+  .frame img { display: block; width: 100%; }
+  .back  { left: 720px; top: 90px;  width: 900px; }
+  .front { left: 900px; top: 380px; width: 780px; }
+</style></head>
+<body>
+  <svg class="topo" viewBox="0 0 1600 900" preserveAspectRatio="none">
+    <g fill="none" stroke="#7fbf98" stroke-width="1.5">
+      <path d="M-50 700 C 300 600, 500 820, 900 700 S 1500 560, 1700 640"/>
+      <path d="M-50 740 C 300 640, 520 860, 920 740 S 1500 600, 1700 680"/>
+      <path d="M-50 780 C 300 680, 540 900, 940 780 S 1500 640, 1700 720"/>
+      <path d="M-50 820 C 300 720, 560 940, 960 820 S 1500 680, 1700 760"/>
+      <path d="M-50 120 C 250 60, 420 220, 700 150 S 1200 40, 1700 110"/>
+      <path d="M-50 80 C 250 20, 440 180, 720 110 S 1200 0, 1700 70"/>
+      <path d="M-50 160 C 250 100, 400 260, 680 190 S 1200 80, 1700 150"/>
+    </g>
+  </svg>
+
+  <div class="left">
+    <div class="logo"><svg viewBox="0 0 32 32"><path d="M2 28 L12 10 L18 20 L22 14 L30 28 Z"/></svg>Trailhead</div>
+    <div class="eyebrow">Full-stack web app</div>
+    <h1>Hiking trail explorer</h1>
+    <p>Discover, review and share hiking trails, with a REST API, a SQL database and a vanilla JS single-page app.</p>
+    <div class="chips">
+      <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">SQLite</span>
+      <span class="chip">REST API</span><span class="chip">JavaScript</span><span class="chip">HTML &amp; CSS</span>
+    </div>
+  </div>
+
+  <div class="frame back"><div class="bar"><i></i><i></i><i></i><span>Trailhead — Find your next hike</span></div><img src="site.png"></div>
+  <div class="frame front"><div class="bar"><i></i><i></i><i></i><span>Silverpine Ridge Loop — Trailhead</span></div><img src="detail.png"></div>
+</body></html>

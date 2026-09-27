@@ -205,11 +205,12 @@ label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 6px; 
 
 /* ---------- Toast & footer ---------- */
 .toast {
-  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 150%);
+  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, calc(100% + 40px));
   background: var(--ink); color: var(--bg); padding: 12px 20px; border-radius: 999px;
-  font-weight: 500; transition: transform .3s; z-index: 50; max-width: calc(100% - 32px);
+  font-weight: 500; transition: transform .3s, visibility .3s; z-index: 50; max-width: calc(100% - 32px);
+  visibility: hidden;
 }
-.toast.show { transform: translate(-50%, 0); }
+.toast.show { transform: translate(-50%, 0); visibility: visible; }
 .toast.error { background: var(--warn); color: #fff; }
 
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0; font-size: .9rem; }
